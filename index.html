@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Tehtävälista</title>
+  <link rel="stylesheet" href="style.css"> <!-- Lisätään .css tiedosto -->
+</head>
+<body onclick="onClickEvent(event)"> <!-- Tarkistetaan jokainen painallus -->
+
+  <!-- Parallax Image -->
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Tehtävälista
+      </span>
+    </div>
+  </div>
+
+  <!-- Parallax Section -->
+  <div>
+    <section class="content">
+      <h1>Lista</h1>
+      <!-- Tehtävä Lista-->
+
+      <!-- Käyttäjän kirjoitus ja lisää painike-->
+      <input type="text" name="addToList" placeholder="New Item" id="userInput" onkeydown="addToListOnEnter()" maxlength="100">
+      <input type="submit" name="submitButton" value="Lisää" onmousedown="addToListOnPress()" id="submitButton">
+
+      <br>
+      <!-- Valmistetaan lista-->
+      <div class="wrapper">
+        <ul id="lista">
+        </ul>
+      </div>
+      
+    </section>
+    
+
+    
+  </div>
+
+  <!-- "filler" Parallax Section jotta sivun alaosa mukautuu-->
+  <section class="filler">
+    <br>
+  </section>
+
+  <!-- Lisätään JavaScript tiedosto -->
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

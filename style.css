@@ -1,0 +1,168 @@
+/*
+Import required fonts
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+body, html {
+    height: 100%;
+  }
+
+
+
+
+.pimg1{
+    /* The image used */
+    background-image: url("images/todolist_img.png");
+
+    /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Add a darkened background to the text inside the images */
+.border{
+    background-color: rgba(0, 0, 0, 0.7); /* Change the color of the background to black with 70% opacity*/
+    border-radius: 15px; /* Make the corners round */
+}
+
+
+/* Title inside of section */
+h1{
+    text-align: center; /* Make the text aligned to the center horizontally */
+    font-size: 5vw; /* Change the size of the text to 60px */
+    color: rgb(216, 216, 216); /* Change the color of the text to bit darker white/super light gray */
+    font-family: 'Source Sans Pro', sans-serif; /* Change the default font to something nicer */
+
+}
+
+/* Description of sections */
+p{
+    text-align: center; /* Make the text aligned to the center horizontally */
+    font-size: 1vw; /* Change the size of the text to 20px */
+    color: rgb(216, 216, 216); /* Change the color of the text to bit darker white/super light gray */
+    font-family: 'Source Sans Pro', sans-serif; /* Change the default font to something nicer */
+}
+
+.ptext{
+    padding-top: 90px; /* Add padding to the top so the text would be more down vertically*/
+    text-align: center; /* Make the text aligned to the center horizontally */
+    font-size: 10vw; /* Change the size of the text to 90px */
+    color: white; /* Change the color to white */
+    display: block;
+}
+
+input[type=text]{
+    padding: 12px 12px;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7vw;
+    display: block;
+}
+input[type=text]:focus{
+    border: 2px solid black;
+}
+input[type=text]:hover{
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.5);
+}
+
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 22px 32px;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 15px;
+    display: block;
+
+}
+/*
+input[type=submit]:hover{
+    border: 1px solid black;
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.3);
+
+}
+*/
+
+ul {
+    list-style-type: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    padding-inline-start: 0;
+
+}
+
+ul li {
+    padding: 20px 0px;
+    border: 1px solid #ddd;
+    background-color: #c6f59a;
+    border-radius: 15px;
+    font-size: 1.2vw;
+    text-align: center;
+    /*width: 30%;*/
+    }
+
+ul li:hover{
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.5);
+}
+
+
+.wrapper {
+    margin:auto;
+    width:40%;
+
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+section.content {
+    flex: 1;
+    padding-top: 15px; /* Add padding on the top to make it more aligned vertically */
+    background-color: #454653; /* Change the background color of the selection to dark grey */
+    max-width: 100%; /* Define max width so it doesn't stretch outside of the screen */
+    padding-bottom: 20px;
+}
+
+section.filler {
+    height: 40%;
+    background-color: #454653;
+}
+
+.click-changer {
+    background-color: #94bdff;
+    color: white;
+}
+
+.button-style {
+    float:right;
+    margin:auto;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    font-size: 1.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.button-style:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 900px) {
+  .button-style, ul li, input[type=submit], input[type=text], ul, .wrapper{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
